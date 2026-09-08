@@ -1,0 +1,38 @@
+.dashboard-widget header {
+  border-bottom: 1px solid #dfe1e6;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard-widget h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.dashboard-widget .description {
+  color: #5e6c84;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.dashboard-widget .content {
+  padding: 1rem;
+  background-color: #fafbfc;
+  border: 1px solid #dfe1e6;
+  border-radius: 4px;
+}
+
+.dashboard-widget .content h2 {
+  margin-top: 0;
+}
+
+.user-details p {
+  margin: 0.5rem 0;
+}
+
+.error {
+  color: #bf2600;
+  background-color: #ffedeb;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
