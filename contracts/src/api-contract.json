@@ -1,0 +1,35 @@
+{
+  "projectName": "simple",
+  "version": "1.0.0",
+  "contractDescription": "Defines the API endpoints and their associated data transfer objects (DTOs), which are specified in src/types.ts.",
+  "endpoints": [
+    {
+      "operationId": "searchUserByUsername",
+      "summary": "Retrieve user details by username",
+      "description": "Fetches the public details of a user based on their username. This is the primary endpoint for the user search feature. The response is either the user data on success or a structured error on failure.",
+      "path": "/api/users/{username}",
+      "method": "GET",
+      "request": {
+        "pathParams": {
+          "username": "string"
+        },
+        "queryParams": null,
+        "body": null
+      },
+      "responses": {
+        "200": {
+          "description": "Successful response containing the user's details.",
+          "dto": "SearchUserResponseDto"
+        },
+        "404": {
+          "description": "The requested user could not be found.",
+          "dto": "ErrorResponseDto"
+        },
+        "500": {
+          "description": "An unexpected server-side error occurred.",
+          "dto": "ErrorResponseDto"
+        }
+      }
+    }
+  ]
+}

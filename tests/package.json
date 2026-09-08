@@ -1,0 +1,14 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "Lambda API to demonstrate clear search results and error handling.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "AI Backend Engineer",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
